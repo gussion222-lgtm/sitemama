@@ -186,7 +186,7 @@ header {
 
 .header-top nav ul {
     display: flex;
-    gap: 30px;
+    gap: 80px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -195,7 +195,7 @@ header {
 .header-top nav ul li a {
     color: #333;
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 500;
     transition: color 0.3s;
 }
