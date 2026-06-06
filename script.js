@@ -144,6 +144,16 @@ function appendRow(name, phone, email, subscription) {
     sheet.appendRow([name, phone, email, subscription, new Date()]);
 }
 
+$(document).ready(function(){
+    $('.menu-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        infinite: true,
+        autoplay: false,
+        arrows: true
+    });
+});
 
 
 
