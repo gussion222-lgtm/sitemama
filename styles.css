@@ -6,6 +6,14 @@
     src: url('Fonts/CoreSans/coresansc_95black.otf') format('woff');
 }
 
+@font-face {
+    font-family: "Tovari";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('Fonts/Tovari-sans/tovari-sans.otf') format('opentype');
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -141,7 +149,7 @@ body {
 
 
 header {
-    font-family: 'Coresans', sans-serif;
+    font-family: 'Tovari', sans-serif;
     background-color: #FFF6EA;
     color: #333;
     position: relative;
@@ -151,18 +159,29 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 40px;
+    padding: 10px 0;
     background-color: #FFF6EA;
+    width: 70%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.header-banner {
+    width: 70%;
+    margin: 10px auto 20px auto;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .header-logo .logo {
-    width: 130px;
-    height: 130px;
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
     border: none;
     padding: 0;
     background: none;
     filter: none;
+    display: block;
 }
 
 .header-top nav ul {
@@ -176,26 +195,23 @@ header {
 .header-top nav ul li a {
     color: #333;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-weight: 500;
     transition: color 0.3s;
-}
-
-.header-top nav ul li a:hover {
-    color: #ff7f00;
 }
 
 .header-top .call-button {
     position: static;
     background-color: #FFD700;
     color: #333;
-    padding: 12px 25px;
+    padding: 14px 28px;
     border-radius: 50px;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: bold;
     text-decoration: none;
-    border: 2px solid #333;
+    border: none;
     transition: all 0.3s;
+    white-space: nowrap;
 }
 
 .header-top .call-button:hover {
@@ -203,17 +219,14 @@ header {
     transform: scale(1.05);
 }
 
-.header-banner {
-    width: 90%;
-    margin: 0 auto 20px auto;
-    border-radius: 20px;
-    overflow: hidden;
-}
-
 .banner-img {
     width: 100%;
     height: auto;
     display: block;
+}
+
+.header-top nav ul li a:hover {
+    color: #ff7f00;
 }
 
 .delivery-buttons {
@@ -243,7 +256,7 @@ header {
 }
 
 header h1 {
-    font-family: 'Coresans', sans-serif;
+    font-family: 'Tovari-sans', sans-serif;
     font-size: 4rem;
     margin-bottom: 20px;
 }
@@ -795,7 +808,7 @@ footer a:hover {
         font-size: 0.8rem;
         padding: 7px 12px;
     }
-    
+
     header h1 {
         font-size: 2rem;
     }
@@ -852,4 +865,15 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #F4C542;
+}
+
+.menu-slider {
+    margin: 20px auto;
+    width: 80%;
+}
+
+.menu-slider img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
