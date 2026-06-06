@@ -650,6 +650,53 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
+     .header-top {
+        flex-wrap: wrap;
+        padding: 10px 15px;
+        gap: 10px;
+    }
+
+    .header-logo .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .header-top nav {
+        order: 3;
+        width: 100%;
+    }
+
+    .header-top nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .header-top nav ul li a {
+        font-size: 0.95rem;
+    }
+
+    .header-top .call-button {
+        order: 2;
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    .header-banner {
+        width: 95%;
+        border-radius: 12px;
+    }
+
+    .map-wrapper {
+        width: 95%;
+        border-radius: 12px;
+    }
+
+    .map-wrapper iframe {
+        height: 300px;
+    }
+
     header h1 {
         font-size: 2.5rem;
     }
@@ -736,6 +783,19 @@ footer a:hover {
 }
 
 @media (max-width: 480px) {
+        .header-top nav ul {
+        gap: 8px;
+    }
+
+    .header-top nav ul li a {
+        font-size: 0.85rem;
+    }
+
+    .header-top .call-button {
+        font-size: 0.8rem;
+        padding: 7px 12px;
+    }
+    
     header h1 {
         font-size: 2rem;
     }
