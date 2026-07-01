@@ -667,11 +667,14 @@ footer a:hover {
         flex-wrap: wrap;
         padding: 10px 15px;
         gap: 10px;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .header-logo .logo {
-        width: 80px;
-        height: 80px;
+        width: 110px;
+        height: 110px;
+        order: 1;
     }
 
     .header-top nav {
@@ -680,20 +683,23 @@ footer a:hover {
     }
 
     .header-top nav ul {
+        display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 100%;
+        gap: 0;
     }
 
     .header-top nav ul li a {
         font-size: 0.95rem;
+        white-space: nowrap;
     }
 
     .header-top .call-button {
         order: 2;
-        padding: 8px 15px;
-        font-size: 0.9rem;
+        padding: 12px 20px;
+        font-size: 1.05rem;
     }
 
     .header-banner {
@@ -728,7 +734,7 @@ footer a:hover {
         right: 10px;
         padding: 8px 12px;
     }
-    
+
     nav ul li {
         display: block;
         margin: 10px 0;
@@ -796,17 +802,24 @@ footer a:hover {
 }
 
 @media (max-width: 480px) {
-        .header-top nav ul {
-        gap: 8px;
+    .header-logo .logo {
+        width: 85px;
+        height: 85px;
+    }
+
+    .header-top nav ul {
+        justify-content: space-between;
+        width: 100%;
+        gap: 0;
     }
 
     .header-top nav ul li a {
-        font-size: 0.85rem;
+        font-size: 0.75rem;
     }
 
     .header-top .call-button {
-        font-size: 0.8rem;
-        padding: 7px 12px;
+        font-size: 0.85rem;
+        padding: 9px 14px;
     }
 
     header h1 {
